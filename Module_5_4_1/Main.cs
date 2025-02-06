@@ -36,11 +36,6 @@ namespace Module_5_4_1
                 wallInfo += $"{wall.Name}\t{wallVolume}{Environment.NewLine}";
             }
 
-            ///Предназначенный путь сохранения файла
-            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            string csvPath = Path.Combine(desktopPath, "wallInfo.txt");
-            File.WriteAllText(csvPath, wallInfo);
-
             //Запрос Пути сохранения
             var saveDialog = new SaveFileDialog
             {
